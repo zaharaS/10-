@@ -14,7 +14,7 @@ body{
     flex-wrap: wrap;
     margin: 10px;
     box-sizing: border-box;
-   
+    background-attachment: fixed;
 } 
    .container{
     display: flex;
@@ -28,24 +28,16 @@ body{
         background-repeat: no-repeat;
         background-position: cener;
         background-size: cover;
-        
-        height: 120px;
-        width: 600px;
-
+        margin-left: 10px;
+        height: 80px;
         color: #FFF;
-
         display: flex;
         flex-direction: row;
-        justify-content:space-around;
-      
+        justify-content:space-between;
+        align-items:center;
     }
-     
-    .logo{
-        float: left;
-
-    }
-
-    ul{
+   
+    .head{
         float: right;
         overflow: hidden;
         display: flex;
@@ -62,48 +54,46 @@ body{
         padding: 5px 10 px;
        }
 
-    .logo .ltitle{
-        font-size: 30px;
-        font-family: 'Libre Baskerville', serif;
-       
-    }
-    #ul li a {
+   
+    /* #ul li a {
         list-style: none;
         color: white;
         display: flex;
         flex: 1 1 auto;
         flex-wrap: wrap; 
         justify-content: space-around; 
-        padding: 5px 0;
-    }
+        padding: 5px 0; */
+    
 
-    .menu a{
+    /* .menu a{
         padding: 5px 10 px;
         font-family: 'Libre Baskerville', serif;
-       
-    }
-
+        */
     
-   
 
 .content {
-    padding: 10px;
-    border: 1px solid rgb(245, 1, 1);
+    padding: 20; 
     display: flex; 
     flex-direction: row;
     justify-content:center;
-    align-items: flex-start;
+    align-items: center;
 
 }
 .box-1{
     width: 90%;
+    padding: 10px; 
     margin: 20px auto;
-    color: rgb(238, 155, 155);
+    font-family: 'Libre Baskerville', serif;
+    color: rgb(255, 253, 253);
+}
+
+.text1{
+
 }
  
-.footer div{
+.footer{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
 }
 
 /* галерея */
@@ -133,3 +123,51 @@ body{
     margin: 2% 2% 30px 2%;
 }
 
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+div {}
+
+.menu {
+    margin-left: 10px;
+}
+
+.menu {}
+
+.menu {}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu {}
+
+ul {
+    display: flex;
+}
+
+li.menu_item {
+    margin-left: 10px;
+    white-space: nowrap;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container-second {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.block_from_bottom {
+    flex-basis: 25%;
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+}
