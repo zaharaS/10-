@@ -211,8 +211,22 @@ li.menu_item {
     overflow: hidden;  
 }
 .container_tapestries-2_reverse{
-    display:flex;
-    justify-content: flex-end; 
+     
 }
 
+.container_L_S{
+    display: flex;
+    background:whitesmoke;
+}
 
+.container_L_S_img{
+    display: flex;
+    background:whitesmoke;
+ 
+    flex-grow: 1;  
+    margin: 20px;
+    padding: 20px; 
+    overflow: hidden;
+    /* border-radius: 3px;  */
+    padding-top: 35px;
+}
