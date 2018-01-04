@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0; 
+    height: 100%;
+    min-height: 100%;
+    
+    font-family: 'Libre Baskerville', serif;  
+    background: rgb(30, 36, 46);  
+}
+/* шапка */
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    align-self: flex-start;
+    justify-content: space-between; 
+    flex-basis: 100%; 
+
+    /* max-width: 58%;  */
+}
+.logo{
+    display: block;
+    width: 140px;
+    height: 50px;
+    background: rgb(64, 84, 97) no-repeat; 
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-family:'Libre Baskerville', serif;
+    font-size: 20px;
+    padding: 15px;
+    
+}
+
+.nav{
+   
+}
+.spesial{
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    margin-top: 10px;
+}
+.menu_item{
+    margin-left: 35px;
+
+}
+.a{
+    color: rgb(59, 58, 58);
+    font-family:'Libre Baskerville', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+:hover{
+    color: rgb(0, 217, 255);
+}
+.social a{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+   
+}
+.tw{
+   background: url("../icons/twitter-social-outlined-logo.PNG") no-repeat; 
+   background-position: 100% 0;
+   margin-left: 2px;
+}
+.fb{
+    background: url("../icons/facebook-logo-outline.PNG") no-repeat;
+    background-position: 0 0;
+    margin-left: 2px;
+}
+/* галерея */
+.gallery{
+    padding: .5vw;
+    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-flow: row wrap;
+    
+}
+.gallery div{
+    flex: auto;
+    width: 300px;
+    margin: .5vw;
+   
+}
+.gallery div img{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-vidth: 550px){
+    .gallery div{margin: 0;}
+    .gallery {padding: 0;}
+}
+.gallery:hover img{
+    opacity: 0.3;
+    transition: .8s opacity;
+}
+.gallery:hover img:hover{
+    opacity: 1;
+    transition: .8s opacity;
+}    

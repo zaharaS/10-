@@ -70,6 +70,7 @@ body{
     font-family: 'Libre Baskerville', serif;
     color: rgb(255, 253, 253);
     margin-right: 20px;
+    box-sizing: border-box;
 }
 
 .footer{
@@ -191,32 +192,60 @@ li.menu_item {
    
 }
 
+.container_portrait_image{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.description{
+    position: absolute;
+    bottom: 38px;
+    width: 100%;
+    text-align: center;
+    height: 54px; 
+    display: flex;
+    align-items: center;
+}
+
+
 .image_item {
     padding: 10px;
     margin: 10px;
     position: relative;
-   float: left;
+
   
 }
 .container_tapestries{
     display:flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
     background:whitesmoke;
     width: 100%;
+    height: 320px;
+    flex-basis: 300px;
+    margin: 5px;
+    overflow: hidden;
 }
 .container_tapestries-1{
     display:flex;
     flex-direction: column;
-    /* flex-grow: 1; */
+    flex-grow: 1; 
     padding: 20px; 
     overflow: hidden;  
 }
 .container_tapestries-2_reverse{
-     
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1; 
+    padding: 20px; 
+    overflow: hidden;    
 }
 
 .container_L_S{
     display: flex;
     background:whitesmoke;
+   
 }
 
 .container_L_S_img{
@@ -224,8 +253,8 @@ li.menu_item {
     background:whitesmoke;
  
     flex-grow: 1;  
-    margin: 20px;
-    padding: 20px; 
+    margin: 10px;
+    padding: 10px; 
     overflow: hidden;
     /* border-radius: 3px;  */
     padding-top: 35px;

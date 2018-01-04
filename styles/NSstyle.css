@@ -1,0 +1,125 @@
+/* СТАРТОВАЯ СТР */
+
+body{
+    margin: 0;
+    padding: 0; 
+    height: 100%;
+    min-height: 100%;
+    /* font-family: 'Libre Baskerville', serif;  */
+   /* background-image: url("../pic/IMG_3680.jpg");   */
+    /* background: rgb(121, 119, 119); 
+    font-size: 25px;
+    line-height: 35px; */
+   
+}
+.section_top{
+    position: relative;
+    height: 100vh;
+    background: no-repeat center 0 / cover;
+    /* background: gray; */
+    background-attachment: fixed;
+   background-image: url("../pic/bg 2.jpg");   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+.wr{
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center;  */
+    max-width: 940px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    align-self: flex-start;
+    justify-content: space-between; 
+    flex-basis: 100%; 
+
+    /* max-width: 58%;  */
+}
+.logo{
+    display: block;
+    width: 140px;
+    height: 50px;
+    background: rgb(64, 84, 97) no-repeat; 
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-family:'Libre Baskerville', serif;
+    font-size: 20px;
+    padding: 15px;
+    
+}
+
+.nav{
+   
+}
+.spesial{
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    margin-top: 10px;
+}
+.menu_item{
+    margin-left: 35px;
+
+}
+.a{
+    color: whitesmoke;
+    font-family:'Libre Baskerville', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+:hover{
+    color: rgb(0, 217, 255);
+}
+
+.sloganCont{
+ max-width: 52%;
+  
+}
+.h1{
+    font-family:'Libre Baskerville', serif;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    text-transform: uppercase;
+    margin: 0;
+    color: whitesmoke;
+}
+.h4{
+    font-family:'Libre Baskerville', serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    color: rgb(216, 214, 214);
+    margin: 15px 0 15px 0;
+}
+.social a{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+   
+}
+.tw{
+   background: url("../icons/twitter-social-outlined-logo.PNG") no-repeat; 
+   background-position: 100% 0;
+   margin-left: 2px;
+}
+.fb{
+    background: url("../icons/facebook-logo-outline.PNG") no-repeat;
+    background-position: 0 0;
+    margin-left: 2px;
+}
