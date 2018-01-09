@@ -7,7 +7,7 @@ body{
     font-family: 'Libre Baskerville', serif;  
     background: rgb(30, 36, 46);  
 }
-/* шапка */
+/* Ã‘Ë†ÃÂ°ÃÂ¿ÃÂºÃÂ° */
 .header{
     display: flex;
     flex-wrap: wrap;
@@ -76,26 +76,36 @@ body{
     background-position: 0 0;
     margin-left: 2px;
 }
-/* галерея */
+/* ÃÂ³ÃÂ°ÃÂ»ÃÂµÃ‘â‚¬ÃÂµÃ‘Â */
 .galleryL_S{
     padding: .5vh;
     font-size: 0;
     display: flex;
+   
     flex-wrap: wrap;
     flex-direction: column;
     flex-flow: row wrap;
     
 }
 .galleryL_S div{
-    flex: auto;
-    width: 50vh;
+    /* flex: auto; */
+    flex-basis: 350px;
     margin: .5vh;
-   
+    height: 200px;
+    background-size: cover;
+    flex-grow: 1;
+    background-position: center;
 }
 .galleryL_S div img{
     width: 100%;
     height: auto;
+    
 }
+.rectangl{
+     flex-basis: 600px;
+     height: 200px;
+}
+
 @media screen and (max-vidth: 550px){
     .galleryL_S div{margin: 0;}
     .galleryL_S {padding: 0;}

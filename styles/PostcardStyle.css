@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    padding: 0; 
+    height: 100%;
+    min-height: 100%;
+   font-family: 'Libre Baskerville', serif; 
+    background-image: url("../pic/bg r.jpg");   
+    /* background: rgb(121, 119, 119);  */
+    font-size: 25px;
+    line-height: 35px;
+    
+   
+}
+.section_top{
+    position: relative;
+    height: 100vh;
+    background: no-repeat center 0 / cover;
+    /* background: gray; */
+    background-attachment: fixed;
+   background-image: url("../pic/bg 2.jpg");   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+.wr{
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center;  */
+    max-width: 940px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+
+}
+.header{
+    background-repeat: no-repeat;
+    background-position: cener;
+    background-size: cover;
+    margin-left: 10px;
+    height: 80px;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center; 
+
+    /* max-width: 58%;  */
+
+/* .logo{
+    display: block;
+    width: 140px;
+    height: 50px;
+    background: rgb(64, 84, 97) no-repeat; 
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-family:'Libre Baskerville', serif;
+    font-size: 20px;
+    padding: 15px; */
+    
+}
+
+.nav{
+    
+      
+}
+.spesial{
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    margin-top: 10px;
+   
+}
+.menu_item{
+    margin-left: 35px;
+
+}
+.a{
+    color: rgb(235, 231, 231);
+    font-family:'Libre Baskerville', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+  
+
+}
+:hover{
+    color: rgb(0, 217, 255);
+}
+.social a{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+   
+}
+.tw{
+   background: url("../icons/twitter-social-outlined-logo.PNG") no-repeat; 
+   background-position: 100% 0;
+   margin-left: 2px;
+}
+.fb{
+    background: url("../icons/facebook-logo-outline.PNG") no-repeat;
+    background-position: 0 0;
+    margin-left: 2px;
+}
+
+/* gallery postcards */
+.wrapper{
+    
+  width: 740px;
+  margin:20px auto;
+  background: rgb(163, 162, 162);
+  padding: 20px 10px 2px 20px;
+  box-shadow: 0 0 20px  rgb(31, 29, 29);
+  overflow: hidden;
+}
+
+
+.item{
+    
+    background: rgb(226, 225, 225);
+    width: 170px;
+    height: 150px;  
+    float: left;
+    text-align: center;
+    box-shadow: 0 0 10px  rgb(31, 29, 29 .4);
+    margin: 0 15px 15px 0;
+
+}
+.item > div{
+    position: relative;
+    margin-top: 15%;
+    
+}
+.front:hover{
+    box-shadow: 0 0 20px rgb(3, 15, 15);
+
+}
+.front{
+    transition: all .5s;
+}
+
