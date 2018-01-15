@@ -8,9 +8,7 @@
         <link rel="stylesheet" href="styles/G_Style.css"/>
         <link rel="stylesheet" href="styles/media.css" media="all and (max-width: 890px)" type="text/css">
         <script
-        src="https://code.jquery.com/jquery-3.2.1.js"
-        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-        crossorigin="anonymous"></script>
+        src="https://code.jquery.com/jquery-3.2.1.js"></script>
 
     </head> 
     <body>
@@ -51,28 +49,31 @@
 </section>
 <!-- ДЕЛАЕМ ЗАКАЗ -->
 <div class="dwsF-wrapper">
+    <input class="checkbox" name="toggle" id="dws-form" class="toggleForm">
     <div class="dwsF-container">
-        <h3>Делаю заказ</h3>
+        
+        <label for="dws-form" class="toggleForm" class="toggleForm"><img src="../icons/shopping-bag.PNG"> Делаю заказ</label>
         <form class="formBox">
-            <div class="inputBox focus">
+            <div class="inputBox">
                 <label class="labelText">Ваше имя:</label>
-                <input type="text" class="userInput">
+                <input type="text" class="userInput" required> 
             </div>
-            <div class="inputBox focus">
+            <div class="inputBox">
                 <label class="labelText">E-mail:</label>
-                <input type="text" class="userInput">
+                <input type="email" class="userInput" required>
             </div>
             <div class="inputBox">
                     <label class="labelText">Номер телефона:</label>
-                    <input type="text" class="userInput">
+                    <input type="phone" class="userInput" pattern="\d+">
             </div>
             <div class="inputBox">
                     <label class="labelText">Сообщение:</label>
-                    <input type="text" class="userInput">
+                    <textarea class="userInput" required></textarea>
+                    <!-- <input type="text" class="userInput"> -->
             </div>
                 <div class="inputBox">
-                    <input type="checkbox" class="userInput">
-                    <label class="labelText">Я согласен на обработку моих <a href="#">персональных данных:</a></label>
+                    <input type="checkbox">
+                    <label class="personalDoc">Я согласен на обработку моих <a href="#">персональных данных:</a></label>
                     <input type="submit" value="Отправить" class="button">
             </div>    
         </form>
@@ -81,7 +82,11 @@
 <script>
     $(".userInput").focus(function(){
         $(this).parent().addClass("focus");
-        blur
+        
+    }).blur(function(){
+        if($(this).val()===''){
+            $(this).parent().removeClass("focus");
+        }
     })
 </script>
 
