@@ -3,6 +3,7 @@ body{
     padding: 0;
     font-family: 'Libre Baskerville', serif;  
     background-image: url("../pic/bg r.jpg"); 
+    height: 650px;
 }
 .t3d{
     width: 300px;

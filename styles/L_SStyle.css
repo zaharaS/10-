@@ -3,11 +3,10 @@ body{
     padding: 0; 
     height: 100%;
     min-height: 100%;
-    
     font-family: 'Libre Baskerville', serif;  
     background: rgb(30, 36, 46);  
 }
-/* Ã‘Ë†ÃÂ°ÃÂ¿ÃÂºÃÂ° */
+
 .header{
     display: flex;
     flex-wrap: wrap;
@@ -70,28 +69,27 @@ body{
    background: url("../icons/twitter-social-outlined-logo.PNG") no-repeat; 
    background-position: 100% 0;
    margin-left: 2px;
+   
 }
 .fb{
     background: url("../icons/facebook-logo-outline.PNG") no-repeat;
     background-position: 0 0;
     margin-left: 2px;
 }
-/* ÃÂ³ÃÂ°ÃÂ»ÃÂµÃ‘â‚¬ÃÂµÃ‘Â */
+
 .galleryL_S{
-    padding: .5vh;
+    padding: .5v;
     font-size: 0;
     display: flex;
-   
     flex-wrap: wrap;
     flex-direction: column;
     flex-flow: row wrap;
-    
 }
 .galleryL_S div{
-    /* flex: auto; */
+    flex: auto;
     flex-basis: 350px;
-    margin: .5vh;
-    height: 200px;
+    margin: .9vh;
+    height: 600px;
     background-size: cover;
     flex-grow: 1;
     background-position: center;
@@ -102,8 +100,8 @@ body{
     
 }
 .rectangl{
-     flex-basis: 600px;
-     height: 200px;
+flex-basis: 600px;
+height: 200px;
 }
 
 @media screen and (max-vidth: 550px){
