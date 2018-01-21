@@ -37,16 +37,43 @@ body{
         align-items:center;
         /* margin: 20px; */
     }
+    a {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+    a:hover{
+            color: rgb(0, 217, 255)
+        }
+    
+    
+    .menu {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    ul {
+        display: flex;
+    }
+    li.menu_item {
+        margin-left: 20px;
+        white-space: nowrap;
+        text-decoration: none;
+        list-style: none;
+    }
    
-    .head{
+    /* .head{
         float: right;
         overflow: hidden;
         display: flex;
         flex-direction:row;
         list-style: none;
         font-family: 'Libre Baskerville' serif rgb(253, 252, 252); 
-    }
-    .menu_item:
+    } */
+    /* .menu_item: */
     
 
     
@@ -91,39 +118,7 @@ body{
 } */
 
 
-a {
-    color: white;
-    text-decoration: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-}
-:hover{
-        color: rgb(0, 217, 255)
-    }
 
-
-.menu {
-    margin-left: 10px;
-}
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-
-ul {
-    display: flex;
-}
-
-li.menu_item {
-    margin-left: 20px;
-    white-space: nowrap;
-    text-decoration: none;
-    list-style: none;
-}
 
 .container-second {
     display: flex;
@@ -139,17 +134,17 @@ li.menu_item {
 }
 
 .container_NELA_maine{
-    background: whitesmoke;
+    /* background: whitesmoke; */
     block-size: border-box;
     display: flex;
     flex-wrap: wrap;
     border: solid 1px rgb(192, 190, 190);
     justify-content: center;
     text-align: center;  
-}
+} 
 
 .container_NELA{
-    background: whitesmoke;
+    /* background: whitesmoke; */
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
@@ -167,7 +162,7 @@ li.menu_item {
 }
 
 .container_NELA_second{
-    background: rgb(214, 212, 212); 
+    background: rgb(139, 139, 139); 
     padding: 20px;
     margin: 20px;
     
@@ -177,17 +172,19 @@ li.menu_item {
     justify-content: center;  
 }
 .text_N{
-    padding-right:20px;
+    padding:50px;
+    color: white;
+    font-size: 19px;  
+    
     display: flex;
     justify-content: flex-start;
   
 }
-.container_NELA_third{
-    
-}
+   
+
 .container_portrait {
     display: flex;
-    background:whitesmoke;
+    /* background:whitesmoke; */
     flex-direction: column;
     flex-grow: 1;  
     margin: 20px;
@@ -227,7 +224,7 @@ li.menu_item {
 
   
 }
-.container_tapestries{
+/* .container_tapestries{
     display:flex;
     flex-wrap: wrap;
     flex-grow: 1;
@@ -268,5 +265,21 @@ li.menu_item {
     padding: 10px; 
     overflow: hidden;
     /* border-radius: 3px;  */
-    padding-top: 35px;
-}
+    /* padding-top: 35px; */
+/* } */ */
+/* кнопка */
+.button {
+    background: #06b93f;
+    color: #05bfee;
+    width: 45%;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 55%;
+    cursor: pointer;
+    transition: .5s;
+   }
+   .button:hover {
+    background: #3e63dc;
+   }            

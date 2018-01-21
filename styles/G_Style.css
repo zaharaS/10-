@@ -8,49 +8,52 @@ body{
 
 /* шапка */
 
-.header{
+.header {
+    background-repeat: no-repeat;
+    background-position: cener;
+    background-size: cover;
+    margin-left: 10px;
+    height: 80px;
+    color: #FFF;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center; 
-    align-self: flex-start;
-    justify-content: space-between; 
-    flex-basis: 100%; 
-
-    /* max-width: 58%;  */
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    /* margin: 20px; */
 }
-.logo{
-    display: block;
-    width: 140px;
-    height: 50px;
-    background: rgb(64, 84, 97) no-repeat; 
-    border-radius: 10px;
-    text-transform: uppercase;
-    text-align: center;
+a {
+    color: white;
     text-decoration: none;
-    font-family:'Libre Baskerville', serif;
-    font-size: 20px;
-    padding: 15px;
-    
-}
-
-.nav{
-   
-}
-.spesial{
-    list-style: none;
-    margin: 0;
-    padding: 0; 
     display: flex;
     flex-wrap: wrap;
-    align-items: center; 
-    margin-top: 10px;
+    flex-grow: 1;
 }
-.menu_item{
-    margin-left: 35px;
+a:hover{
+        color: rgb(0, 217, 255)
+    }
 
+
+.menu {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+
+ul {
+    display: flex;
+}
+
+li.menu_item {
+    margin-left: 20px;
+    white-space: nowrap;
+    text-decoration: none;
+    list-style: none;
+}
+
 .a{
-    color: rgb(59, 58, 58);
+    color: rgb(228, 226, 226);
     font-family:'Libre Baskerville', serif;
     font-size: 14px;
     text-transform: uppercase;
@@ -77,6 +80,8 @@ body{
     margin-left: 2px;
 }
 
+
+
 .dws-wrapper{
   /* position: absolute;
     top: 50%;
@@ -88,8 +93,6 @@ body{
     transform: translate(-50%, -50%);   */
     margin-top: 180px;
 }
-
-
 
 .imageBox{
     overflow: hidden; 
