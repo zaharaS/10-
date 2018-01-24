@@ -91,6 +91,6 @@ function getTargetTop(elem) {
         }
       });
 
-      // слайдер
+      
 
       

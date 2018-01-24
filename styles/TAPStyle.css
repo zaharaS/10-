@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0; 
+    height: 100%;
+    min-height: 100%;
+    /* background-image: url("../pic/bg r.jpg"); */
+    font-family: 'Libre Baskerville', serif;  
+    background: rgb(30, 36, 46);   
+}
+/* шапка */
+
+.header {
+    background-repeat: no-repeat;
+    background-position: cener;
+    background-size: cover;
+    margin-left: 10px;
+    height: 80px;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    /* margin: 20px; */
+}
+a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+a:hover{
+        color: rgb(0, 217, 255)
+    }
+
+
+.menu {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+ul {
+    display: flex;
+}
+
+li.menu_item {
+    margin-left: 20px;
+    white-space: nowrap;
+    text-decoration: none;
+    list-style: none;
+}
+
+.a{
+    color: rgb(228, 226, 226);
+    font-family:'Libre Baskerville', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.social a{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+   
+}
+.tw{
+   background: url("../icons/twitter-social-outlined-logo.PNG") no-repeat; 
+   background-position: 100% 0;
+   margin-left: 2px;
+}
+.fb{
+    background: url("../icons/facebook-logo-outline.PNG") no-repeat;
+    background-position: 0 0;
+    margin-left: 2px;
+}
+/* галерея */
+.gallery{
+    padding: .5vw;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-flow: row wrap;
+    
+}
+.gallery div{
+    flex: auto;
+    width: 300px;
+    margin: .5vw;
+    
+   
+}
+.gallery div img{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-vidth: 550px){
+    .gallery div{margin: 0;}
+    .gallery {padding: 0;}
+}
+.gallery:hover img{
+    opacity: 0.3;
+    transition: .8s opacity;
+}
+.gallery:hover img:hover{
+    opacity: 1;
+    transition: .8s opacity;
+} 
+h2{
+    /* background-color: rgb(39, 46, 59); */
+    width: 100%;
+    color: rgb(156, 163, 163);
+    text-align: justify;
+
+} 
+h3{
+    text-align: center;
+    
+    color: rgb(73, 75, 75);
+}  

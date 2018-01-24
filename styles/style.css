@@ -77,23 +77,21 @@ body{
     
 
     
-    /* .content{
+   /* .content{
         display: flex; 
         flex-direction: row;
         justify-content:space-around;
         padding: 5px 10 px;
-       } */
+       }  */
 
-   .content {
+  .content {
     padding: 20;
     display: flex;
     flex-direction: row;
-    justify-content:center;
     align-items: center;
     margin: 20px;
-    /* width: 800px; */
-    background: #2f2e2e36;
-}
+    /* background: #2f2e2e36; */
+} 
 .box-1{
     /* background: #691a1aad; */
     width: 60%;
@@ -104,10 +102,17 @@ body{
     margin-right: 20px;
     box-sizing: border-box;
 }
+.photo{
+    height: 550px;
+    width: 400px;
+    overflow: hidden;
+}
 
 .footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+      
+      
 }
 
 
@@ -120,18 +125,18 @@ body{
 
 
 
-.container-second {
+/* .container-second {
     display: flex;
     height: 100vh;
     width: 100%;
-}
+} */
 
-.block_from_bottom {
+/* .block_from_bottom {
     flex-basis: 25%;
     flex-direction: column;
     justify-content: flex-end;
     display: flex;
-}
+} */
 
 .container_NELA_maine{
     /* background: whitesmoke; */
@@ -147,27 +152,29 @@ body{
     /* background: whitesmoke; */
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: -2px;
     box-sizing: border-box;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+   
+    
     
 }
 .container_NELA_first{
     display: flex;
+    flex-wrap: wrap;
     padding: 20px;
     margin: auto;
     
 }
 
 .container_NELA_second{
-    background: rgb(139, 139, 139); 
+    /* background: rgb(139, 139, 139);  */
     padding: 20px;
     margin: 20px;
-    
     width: 60%;
     display:flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;  
 }
@@ -182,31 +189,31 @@ body{
 }
    
 
-.container_portrait {
+/* .container_portrait { 
     display: flex;
-    /* background:whitesmoke; */
+    background:whitesmoke; 
     flex-direction: column;
     flex-grow: 1;  
     margin: 20px;
     padding: 20px; 
     overflow: hidden;
-    /* border-radius: 3px;  */
-    padding-top: 35px;
+    border-radius: 3px;  
+    padding-top: 35px; */
     
-}
+/* }
 .container_portrait_all{
     display:flex;
     flex-direction: column;
    
-}
+} */
 
-.container_portrait_image{
+/* .container_portrait_image{
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-}
+} */
 
-.description{
+/* .description{
     position: absolute;
     bottom: 38px;
     width: 100%;
@@ -214,16 +221,16 @@ body{
     height: 54px; 
     display: flex;
     align-items: center;
-}
+} */
 
 
-.image_item {
+/* .image_item {
     padding: 10px;
     margin: 10px;
     position: relative;
 
   
-}
+} */
 /* .container_tapestries{
     display:flex;
     flex-wrap: wrap;
@@ -267,6 +274,7 @@ body{
     /* border-radius: 3px;  */
     /* padding-top: 35px; */
 /* } */ */
+
 /* кнопка */
 .button {
     background: #06b93f;

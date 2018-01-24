@@ -9,94 +9,68 @@ body{
     font-size: 25px;
     line-height: 35px;
 }
-.section_top{
-    position: relative;
-    height: 100vh;
-    background: no-repeat center 0 / cover;
-    /* background: gray; */
-    background-attachment: fixed;
-   background-image: url("../pic/bg 2.jpg");   
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center; 
-}
-.wr{
-    display: flex;
-    flex-wrap: wrap;
-    /* align-items: center;  */
-    max-width: 940px;
-    margin: 0 auto;
-    position: relative;
-    height: 100%;
 
-}
-.header{
+/* шапка */
+
+.header {
     background-repeat: no-repeat;
     background-position: cener;
     background-size: cover;
-    /* margin-left: 10px; */
-    /* height: 80px; */
+    margin-left: 10px;
+    height: 80px;
     color: #FFF;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    align-items:center;  
-
-    /* max-width: 58%;  */
-
-/* .logo{
-    display: block;
-    width: 140px;
-    height: 50px;
-    background: rgb(64, 84, 97) no-repeat; 
-    border-radius: 10px;
-    text-transform: uppercase;
-    text-align: center;
+    align-items:center;
+    /* margin: 20px; */
+}
+.header a {
+    color: white;
     text-decoration: none;
-    font-family:'Libre Baskerville', serif;
-    font-size: 20px;
-    padding: 15px; */
-    
-}
-
-.nav{
-  width: 740px;
-  display: flex;
-  justify-content: flex-end;     
-      
-}
-.spesial{
-    list-style: none;
-    margin: 0;
-    padding: 0; 
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center; 
-    margin-top: 10px;
-   
+    flex-grow: 1;
 }
-.menu_item{
-    margin-left: 35px;
+.headera:hover{
+        color: rgb(0, 217, 255)
+    }
 
+
+.menu {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-.a{
-    color: rgb(235, 231, 231);
+
+
+ul {
+    display: flex;
+}
+
+li.menu_item {
+    margin-left: 20px;
+    white-space: nowrap;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header a{
+    color: rgb(228, 226, 226);
     font-family:'Libre Baskerville', serif;
     font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
-  
 
 }
-:hover{
+.header a:hover{
     color: rgb(0, 217, 255);
 }
 .social a{
     width: 25px;
     height: 25px;
     display: inline-block;
-    filter: brightness(1000);
    
 }
 .tw{
@@ -110,13 +84,14 @@ body{
     margin-left: 2px;
 }
 
+
 /* gallery postcards */
 .wrapper{
     
   max-width: 740px;
   margin:20px auto;
   background: rgb(163, 162, 162);
-  padding: 20px 10px 2px 20px;
+  padding: 24px 20px 30px 20px;
   box-shadow: 0 0 20px  rgb(31, 29, 29);
   overflow: hidden;
 }
@@ -131,7 +106,7 @@ body{
     flex-grow: 1;
     background: rgb(226, 225, 225);
     width: 170px;
-    height: 150px;
+    height: 105px;
     float: left;
     text-align: center;
     margin: 7px;
@@ -139,13 +114,20 @@ body{
 }
 .item > div{
     position: relative;
-    margin-top: 15%;
-    height: 100%;
+    /* margin-top: 15%; */
+    height: 115px;
     width: 100%;
-    margin: 10px 10px 10px 0px;
+    /* margin: 10px 10px 10px 0px; */
     box-sizing: border-box;
-    padding: 10px;
+    /* padding: 10px; */
+    overflow: hidden;
+    border: 10px solid rgb(122, 138, 150);
 }
+.item > div:hover{
+box-shadow:inset 0px 0px 10px black;
+border: 10px solid rgb(246, 247, 248); 
+}
+
 .front:hover{
     box-shadow: 0 0 20px rgb(3, 15, 15);
 
