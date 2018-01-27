@@ -13,24 +13,27 @@ body{
 /* шапка */
 
 .header {
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-position: cener;
-    background-size: cover;
-    margin-left: 10px;
+    /* background-size: cover; */
+    padding-left: 10px;
     height: 80px;
     color: #FFF;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content:space-between;
     align-items:center;
     /* margin: 20px; */
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 10px;
 }
 .header a {
     color: white;
     text-decoration: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* flex-grow: 1; */
 }
 .headera:hover{
         color: rgb(0, 217, 255)
@@ -38,20 +41,23 @@ body{
 
 
 .menu {
-    margin-left: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    /* margin-left: 10px; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: center; */
 }
 
 
 ul {
     display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 li.menu_item {
     margin-left: 20px;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     text-decoration: none;
     list-style: none;
 }
@@ -121,7 +127,7 @@ li.menu_item {
     box-sizing: border-box;
     /* padding: 10px; */
     overflow: hidden;
-    border: 10px solid rgb(122, 138, 150);
+    border: 10px solid rgb(136, 150, 160);
 }
 .item > div:hover{
 box-shadow:inset 0px 0px 10px black;
@@ -141,3 +147,9 @@ border: 10px solid rgb(246, 247, 248);
     justify-content: center;
 }
     
+
+.item:last-child {
+    /* max-width: 170px; */
+    /* flex-grow: 0; */
+    /* flex-basis: 200px; */
+}

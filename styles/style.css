@@ -28,14 +28,15 @@ body{
         background-repeat: no-repeat;
         background-position: cener;
         background-size: cover;
-        margin-left: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
         height: 80px;
         color: #FFF;
         display: flex;
         flex-direction: row;
         justify-content:space-between;
         align-items:center;
-        /* margin: 20px; */
+        margin: 20px;
     }
     a {
         color: white;
@@ -57,32 +58,69 @@ body{
     }
     ul {
         display: flex;
+        position: fixed;
+        top:0;
+        bottom: 0;
+        left: 0;
+        width: 200px;
     }
     li.menu_item {
         margin-left: 20px;
         white-space: nowrap;
         text-decoration: none;
         list-style: none;
+        /* float: none; */
     }
    
-    /* .head{
-        float: right;
-        overflow: hidden;
-        display: flex;
-        flex-direction:row;
-        list-style: none;
-        font-family: 'Libre Baskerville' serif rgb(253, 252, 252); 
-    } */
-    /* .menu_item: */
-    
 
+/* гамбургер */
+
+.hamburger{
+    /* display: none; */
+    width: 16px;
+    height: 12px;
+    float: right;
+    margin: 6px;
+    position: relative;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    cursor: pointer;
+}
+/* средняя полоска псевдоэл */
+.hamburger:after{
+    content:"";
+    position: absolute;
+    display: block;
+    right: 0;
+    left: 0;
+    top: 5px;
+    height: 2px;
+    background: red;
+}
+
+@media(max-vidth:600px){
+    .hamburger{
+        display: block;
+    } 
+    ul {
+        /* display: none; */
+        left: -200px;
+        background: rgb(138, 94, 94);
+        position: fixed;
+        top:0;
+        bottom: 0;
+        left: 0;
+        width: 200px;
+        transition: .2s;
+    } 
+    ul.open{
+        /* display: block; */
+        left: 0;
+    }
     
-   /* .content{
-        display: flex; 
-        flex-direction: row;
-        justify-content:space-around;
-        padding: 5px 10 px;
-       }  */
+}
+
+
 
   .content {
     padding: 20;
@@ -109,34 +147,23 @@ body{
 }
 
 .footer{
+    height: 110px;
     display: flex;
-    justify-content: space-between; 
-      
-      
+    justify-content: space-between;
 }
-
-
-/* .conteiner1 {
-    width: 80%;
-    margin: 30px auto;
-    overflow: hidden; 
-} */
-
-
-
-
-/* .container-second {
+.info {
+    margin-top: 37px;
+}
+.mail{
+    margin-top: 37px;  
+}
+.soucial{
     display: flex;
-    height: 100vh;
-    width: 100%;
-} */
-
-/* .block_from_bottom {
-    flex-basis: 25%;
-    flex-direction: column;
-    justify-content: flex-end;
-    display: flex;
-} */
+    padding: 46px;
+}
+.tv{
+  width: 50px;  
+}
 
 .container_NELA_maine{
     /* background: whitesmoke; */
@@ -156,16 +183,14 @@ body{
     box-sizing: border-box;
     flex-direction: column;
     width: 100%;
-   
-    
     
 }
+
 .container_NELA_first{
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
-    margin: auto;
-    
+    padding: 10px;
+    margin-top: 50px;
 }
 
 .container_NELA_second{
@@ -188,92 +213,6 @@ body{
   
 }
    
-
-/* .container_portrait { 
-    display: flex;
-    background:whitesmoke; 
-    flex-direction: column;
-    flex-grow: 1;  
-    margin: 20px;
-    padding: 20px; 
-    overflow: hidden;
-    border-radius: 3px;  
-    padding-top: 35px; */
-    
-/* }
-.container_portrait_all{
-    display:flex;
-    flex-direction: column;
-   
-} */
-
-/* .container_portrait_image{
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-} */
-
-/* .description{
-    position: absolute;
-    bottom: 38px;
-    width: 100%;
-    text-align: center;
-    height: 54px; 
-    display: flex;
-    align-items: center;
-} */
-
-
-/* .image_item {
-    padding: 10px;
-    margin: 10px;
-    position: relative;
-
-  
-} */
-/* .container_tapestries{
-    display:flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    background:whitesmoke;
-    width: 100%;
-    height: 320px;
-    flex-basis: 300px;
-    margin: 5px;
-    overflow: hidden;
-}
-.container_tapestries-1{
-    display:flex;
-    flex-direction: column;
-    flex-grow: 1;
-    padding: 20px;
-    overflow: hidden;
-}
-.container_tapestries-2_reverse{
-    display:flex;
-    flex-direction: column;
-    flex-grow: 1; 
-    padding: 20px; 
-    overflow: hidden;    
-}
-
-.container_L_S{
-    display: flex;
-    background:whitesmoke;
-   
-}
-
-.container_L_S_img{
-    display: flex;
-    background:whitesmoke;
- 
-    flex-grow: 1;  
-    margin: 10px;
-    padding: 10px; 
-    overflow: hidden;
-    /* border-radius: 3px;  */
-    /* padding-top: 35px; */
-/* } */ */
 
 /* кнопка */
 .button {
