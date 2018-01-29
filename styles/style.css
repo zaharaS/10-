@@ -58,7 +58,7 @@ body{
     }
     ul {
         display: flex;
-        position: fixed;
+        /* position: fixed; */
         top:0;
         bottom: 0;
         left: 0;
@@ -69,14 +69,14 @@ body{
         white-space: nowrap;
         text-decoration: none;
         list-style: none;
-        /* float: none; */
+        float: none;
     }
    
 
 /* гамбургер */
 
 .hamburger{
-    /* display: none; */
+    display: none;  
     width: 16px;
     height: 12px;
     float: right;
@@ -98,7 +98,7 @@ body{
     background: red;
 }
 
-@media(max-vidth:600px){
+@media(max-vidth:360px){
     .hamburger{
         display: block;
     } 
@@ -204,13 +204,18 @@ body{
     justify-content: center;  
 }
 .text_N{
-    padding:50px;
+    padding: 20px;
     color: white;
-    font-size: 19px;  
-    
+    font-size: 20px;
     display: flex;
     justify-content: flex-start;
-  
+    /* height: 35%; */
+    /* width: 50%; */
+    text-align: justify;
+}
+container_NELA_third{
+    margin-top: 30px;
+    padding: 10px;
 }
    
 
@@ -226,6 +231,7 @@ body{
     margin-left: 55%;
     cursor: pointer;
     transition: .5s;
+
    }
    .button:hover {
     background: #3e63dc;
