@@ -4,17 +4,18 @@ body{
     /* font-family:  */
     /* text-align: center; */
     font-weight: 300px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
     color: #252222;
-    margin-top: 70px;
+    /* margin-top: 70px; */
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     flex-wrap: wrap;
-    margin: 10px;
+    padding: 11px;
     box-sizing: border-box;
     background-attachment: fixed;
+    background-size: cover;
 } 
    .container{
     display: flex;
@@ -22,36 +23,49 @@ body{
     justify-content:center;
     flex-wrap: wrap;
     
-    }  
+    } 
+
   
   .header {
         background-repeat: no-repeat;
         background-position: cener;
         background-size: cover;
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 10px;
         height: 80px;
+        /* width: 100%; */
         color: #FFF;
         display: flex;
         flex-direction: row;
         justify-content:space-between;
         align-items:center;
-        margin: 20px;
     }
-    a {
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        /* flex-wrap: wrap; */
+    }
+    .container_maine{
+        width: 100%;
+        /* margin-right: 7%; */
+    }
+
+    .header a {
         color: white;
         text-decoration: none;
+        font-size: 16px;
         display: flex;
         flex-wrap: wrap;
         flex-grow: 1;
     }
-    a:hover{
+    .header a:hover{
             color: rgb(0, 217, 255)
         }
     
     
     .menu {
-        margin-left: 10px;
+        /* margin-left: 10px; */
+        padding: 20px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -62,7 +76,7 @@ body{
         top:0;
         bottom: 0;
         left: 0;
-        width: 200px;
+        /* width: 200px; */
     }
     li.menu_item {
         margin-left: 20px;
@@ -76,15 +90,17 @@ body{
 /* гамбургер */
 
 .hamburger{
-    display: none;  
+    display: none;
+    right: 0;
     width: 16px;
-    height: 12px;
-    float: right;
+    height: 13px;
+    /* float: right; */
     margin: 6px;
-    position: relative;
+    position: fixed;
     border-top: 2px solid red;
     border-bottom: 2px solid red;
     cursor: pointer;
+    z-index: 100;
 }
 /* средняя полоска псевдоэл */
 .hamburger:after{
@@ -96,94 +112,74 @@ body{
     top: 5px;
     height: 2px;
     background: red;
+   
 }
 
-@media(max-vidth:360px){
-    .hamburger{
-        display: block;
-    } 
-    ul {
-        /* display: none; */
-        left: -200px;
-        background: rgb(138, 94, 94);
-        position: fixed;
-        top:0;
-        bottom: 0;
-        left: 0;
-        width: 200px;
-        transition: .2s;
-    } 
-    ul.open{
-        /* display: block; */
-        left: 0;
-    }
+.burger_content{
+    position: relative;
     
 }
-
-
-
-  .content {
-    padding: 20;
+  
+.content {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin: 20px;
-    /* background: #2f2e2e36; */
-} 
+        /* background: #2f2e2e36; */
+    } 
+
+  
 .box-1{
-    /* background: #691a1aad; */
-    width: 60%;
-    padding: 30px;
-    margin: 20px;
-    font-family: 'Libre Baskerville', serif;
-    color: rgb(255, 253, 253);
-    margin-right: 20px;
-    box-sizing: border-box;
+     /* background: #691a1aad;  */
+     /* width: 60%; */
+     padding: 30px;
+     margin: 30px;
+     font-family: 'Libre Baskerville', serif;
+     color: rgb(255, 253, 253);
+     margin-right: 20px;
+     /* box-sizing: border-box; */
+     display: flex;
+     flex-wrap: wrap;
 }
+
+.email{
+    color: white;
+    text-decoration: none;  
+}
+.email:hover{
+    color: rgb(0, 217, 255)
+}
+.box-2{
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
 .photo{
     height: 550px;
     width: 400px;
     overflow: hidden;
 }
 
-.footer{
-    height: 110px;
-    display: flex;
-    justify-content: space-between;
-}
-.info {
-    margin-top: 37px;
-}
-.mail{
-    margin-top: 37px;  
-}
-.soucial{
-    display: flex;
-    padding: 46px;
-}
-.tv{
-  width: 50px;  
-}
+
 
 .container_NELA_maine{
+    overflow: hidden;
     /* background: whitesmoke; */
-    block-size: border-box;
     display: flex;
     flex-wrap: wrap;
     border: solid 1px rgb(192, 190, 190);
     justify-content: center;
-    text-align: center;  
+    text-align: center;
+    height: auto;
 } 
 
 .container_NELA{
     /* background: whitesmoke; */
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin: -2px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     flex-direction: column;
     width: 100%;
-    
+    /* box-sizing: border-box; */
 }
 
 .container_NELA_first{
@@ -197,14 +193,15 @@ body{
     /* background: rgb(139, 139, 139);  */
     padding: 20px;
     margin: 20px;
-    width: 60%;
+    /* width: 60%; */
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;  
+    justify-content: center;
+    /* box-sizing: border-box; */
 }
 .text_N{
-    padding: 20px;
+    /* padding: 20px; */
     color: white;
     font-size: 20px;
     display: flex;
@@ -217,22 +214,77 @@ container_NELA_third{
     margin-top: 30px;
     padding: 10px;
 }
+
+/* footer */
+
+.footer{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.info {
+    margin-top: 20px;
+}
+.mail{
+    margin-top: 37px;  
+}
+.soucial{
+    display: flex;
+    padding: 46px;
+}
+.tv{
+  width: 50px;  
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.footer a:hover{
+        color: rgb(0, 217, 255)
+    }
    
 
 /* кнопка */
 .button {
-    background: #06b93f;
-    color: #05bfee;
-    width: 45%;
-    height: 50px;
+    background: #29596385;
+    color: #05bfeee0;
+    position: fixed;
+    width: 7%;
+    border-radius: 30px;
+    height: 60px;
     font-size: 18px;
     border: none;
     margin-top: 10px;
     margin-left: 55%;
     cursor: pointer;
     transition: .5s;
-
+    z-index: 99;
+    bottom: 0;
+    right: 0;
    }
    .button:hover {
     background: #3e63dc;
-   }            
+   }  
+
+   /* <wrapper> */
+    
+   .dws-wrapper2 {
+    font-family: 'Libre Baskerville', serif;
+    background-image: url("../pic/bg r.jpg");
+    width: 95%;
+    /* margin: 30px; */
+    padding: 30px;
+    display: none;
+    flex-wrap: wrap;
+    text-align: justify;
+    color: #d7eefa;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    overflow: scroll;
+}

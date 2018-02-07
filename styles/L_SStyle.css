@@ -7,6 +7,39 @@ body{
     background: rgb(30, 36, 46);  
 }
 
+/* гамбургер */
+
+.hamburger{
+    display: none;
+    right: 0;
+    width: 16px;
+    height: 13px;
+    /* float: right; */
+    margin: 6px;
+    position: fixed;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    cursor: pointer;
+    z-index: 100;
+}
+/* средняя полоска псевдоэл */
+.hamburger:after{
+    content:"";
+    position: absolute;
+    display: block;
+    right: 0;
+    left: 0;
+    top: 5px;
+    height: 2px;
+    background: red;
+   
+}
+
+.burger_content{
+    position: relative;
+    
+}
+
 .header {
     background-repeat: no-repeat;
     background-position: cener;
@@ -18,22 +51,22 @@ body{
     flex-direction: row;
     justify-content:space-between;
     align-items:center;
-    /* margin: 20px; */
 }
-a {
+.header a {
     color: white;
     text-decoration: none;
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
 }
-a:hover{
+.header a:hover{
         color: rgb(0, 217, 255)
     }
 
 
 .menu {
     margin-left: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -51,15 +84,15 @@ li.menu_item {
     list-style: none;
 }
 
-.a{
+.header a{
     color: rgb(228, 226, 226);
     font-family:'Libre Baskerville', serif;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
 
 }
-:hover{
+.header a:hover{
     color: rgb(0, 217, 255);
 }
 .social a{
@@ -104,6 +137,62 @@ li.menu_item {
 flex-basis: 600px;
 height: 200px;
 }
+
+/* footer */
+
+.footer{
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.info {
+    margin-top: 37px;
+}
+.mail{
+    margin-top: 37px;  
+}
+.soucial{
+    display: flex;
+    padding: 46px;
+}
+.tv{
+  width: 50px;  
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.footer a:hover{
+        color: rgb(0, 217, 255)
+    }
+   
+
+/* кнопка */
+.button {
+    background: #29596385;
+    color: #05bfeee0;
+    position: fixed;
+    width: 7%;
+    border-radius: 30px;
+    height: 60px;
+    font-size: 18px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 55%;
+    cursor: pointer;
+    transition: .5s;
+    z-index: 99;
+    bottom: 0;
+    right: 0;
+   }
+   .button:hover {
+    background: #3e63dc;
+   }           
 
 @media screen and (max-vidth: 550px){
     .galleryL_S div{margin: 0;}

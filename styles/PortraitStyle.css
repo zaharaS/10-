@@ -7,6 +7,40 @@ body{
     font-family: 'Libre Baskerville', serif;  
     background: rgb(30, 36, 46);   
 }
+
+/* гамбургер */
+
+.hamburger{
+    display: none;
+    right: 0;
+    width: 16px;
+    height: 13px;
+    /* float: right; */
+    margin: 6px;
+    position: fixed;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    cursor: pointer;
+    z-index: 100;
+}
+/* средняя полоска псевдоэл */
+.hamburger:after{
+    content:"";
+    position: absolute;
+    display: block;
+    right: 0;
+    left: 0;
+    top: 5px;
+    height: 2px;
+    background: red;
+   
+}
+
+.burger_content{
+    position: relative;
+    
+}
+
 /* шапка */
 
 .header {
@@ -14,6 +48,7 @@ body{
     background-position: cener;
     background-size: cover;
     margin-left: 10px;
+    /* padding: 20px; */
     height: 80px;
     color: #FFF;
     display: flex;
@@ -35,7 +70,8 @@ a:hover{
 
 
 .menu {
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    padding: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -112,3 +148,59 @@ li.menu_item {
     opacity: 1;
     transition: .8s opacity;
 }    
+
+/* footer */
+
+.footer{
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.info {
+    margin-top: 37px;
+}
+.mail{
+    margin-top: 37px;  
+}
+.soucial{
+    display: flex;
+    padding: 46px;
+}
+.tv{
+  width: 50px;  
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.footer a:hover{
+        color: rgb(0, 217, 255)
+    }
+
+    /* кнопка */
+.button {
+    background: #29596385;
+    color: #05bfeee0;
+    position: fixed;
+  
+    width: 7%;
+    border-radius: 30px;
+    height: 60px;
+    font-size: 18px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 55%;
+    cursor: pointer;
+    transition: .5s;
+    z-index: 99;
+    bottom: 0;
+    right: 0;
+   }
+   .button:hover {
+    background: #3e63dc;
+   }            

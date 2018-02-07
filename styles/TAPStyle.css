@@ -7,6 +7,40 @@ body{
     font-family: 'Libre Baskerville', serif;  
     background: rgb(30, 36, 46);   
 }
+
+/* гамбургер */
+
+.hamburger{
+    display: none;
+    right: 0;
+    width: 16px;
+    height: 13px;
+    /* float: right; */
+    margin: 6px;
+    position: fixed;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    cursor: pointer;
+    z-index: 100;
+}
+/* средняя полоска псевдоэл */
+.hamburger:after{
+    content:"";
+    position: absolute;
+    display: block;
+    right: 0;
+    left: 0;
+    top: 5px;
+    height: 2px;
+    background: red;
+   
+}
+
+.burger_content{
+    position: relative;
+    
+}
+
 /* шапка */
 
 .header {
@@ -22,20 +56,21 @@ body{
     align-items:center;
     /* margin: 20px; */
 }
-a {
+header a {
     color: white;
     text-decoration: none;
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
 }
-a:hover{
+.header a:hover{
         color: rgb(0, 217, 255)
     }
 
 
 .menu {
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    padding: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -53,16 +88,15 @@ li.menu_item {
     list-style: none;
 }
 
-.a{
+.header a{
     color: rgb(228, 226, 226);
     font-family:'Libre Baskerville', serif;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
-
 }
 
-.social a{
+/* .social a{
     width: 25px;
     height: 25px;
     display: inline-block;
@@ -77,7 +111,7 @@ li.menu_item {
     background: url("../icons/facebook-logo-outline.PNG") no-repeat;
     background-position: 0 0;
     margin-left: 2px;
-}
+}  */
 /* галерея */
 .gallery{
     padding: .5vw;
@@ -99,6 +133,39 @@ li.menu_item {
     width: 100%;
     height: auto;
 }
+/* footer */
+
+.footer{
+    height: 70px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.info {
+    margin-top: 37px;
+}
+.mail{
+    margin-top: 37px;  
+}
+.soucial{
+    display: flex;
+    padding: 46px;
+}
+.tv{
+  width: 50px;  
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.footer a:hover{
+        color: rgb(0, 217, 255)
+    }
+
 @media screen and (max-vidth: 550px){
     .gallery div{margin: 0;}
     .gallery {padding: 0;}

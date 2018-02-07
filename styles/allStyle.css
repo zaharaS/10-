@@ -1,0 +1,124 @@
+body{
+    font-family: 'Libre Baskerville', serif;
+    background-image: url("../pic/bg r.jpg");
+    /* font-family:  */
+    /* text-align: center; */
+    font-weight: 300px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #252222;
+    /* margin-top: 70px; */
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding: 11px;
+    box-sizing: border-box;
+    background-attachment: fixed;
+    background-size: cover;
+} 
+.header {
+    background-repeat: no-repeat;
+    background-position: cener;
+    background-size: cover;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 80px;
+    /* width: 100%; */
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    margin: 20px;
+}
+.container_maine{
+    width: 100%;
+    /* margin-right: 7%; */
+}
+
+/* гамбургер */
+
+.hamburger{
+    display: none;
+    right: 0;
+    width: 16px;
+    height: 13px;
+    /* float: right; */
+    margin: 6px;
+    position: fixed;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    cursor: pointer;
+    z-index: 100;
+}
+/* средняя полоска псевдоэл */
+.hamburger:after{
+    content:"";
+    position: absolute;
+    display: block;
+    right: 0;
+    left: 0;
+    top: 5px;
+    height: 2px;
+    background: red;
+   
+}
+
+.burger_content{
+    position: relative;
+    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+a:hover{
+        color: rgb(0, 217, 255)
+    }
+
+
+.menu {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+ul {
+    display: flex;
+    /* position: fixed; */
+    top:0;
+    bottom: 0;
+    left: 0;
+    /* width: 200px; */
+}
+li.menu_item {
+    margin-left: 20px;
+    white-space: nowrap;
+    text-decoration: none;
+    list-style: none;
+    float: none;
+}
+/* footer */
+.footer{
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+.info {
+    margin-top: 37px;
+}
+.mail{
+    margin-top: 37px;  
+}
+.soucial{
+    display: flex;
+    padding: 46px;
+}
+.tv{
+  width: 50px;  
+}

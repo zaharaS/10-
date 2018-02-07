@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(3, 58, 12);
+    background-image: url("../pic/bg r.jpg");
 }
 @media only screen and (max-width: 768px){
     .dws-wrapper{
@@ -17,3 +17,65 @@ body{
 @media only screen and (max-width: 240px){
     
 }
+
+/* Nela */
+
+@media screen and (max-width: 450px){
+    .content{
+        flex-direction: column-reverse!important;
+    }  
+
+    .header{
+        display: none;
+    }
+    
+    a {
+        color: rgb(238, 232, 232);
+        text-decoration: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+    a:hover{
+            color: rgb(0, 217, 255)
+        }
+    
+    .hamburger{
+        display: block;
+    } 
+    
+    }
+    ul.burger {
+        display: none;
+        flex-direction: column;
+        left: -200px;
+        background: rgba(56, 70, 70, 0.88);
+        position: fixed;
+        top:0;
+        bottom: 0;
+        left: 0;
+        width: 150px;
+        height: 35%;
+        transition: .2s;
+        list-style: none;
+        padding: 20px;
+        margin: 20px;
+        line-height: 2;
+    } 
+    ul.burger.open{
+        /* display: block; */
+        left: 0;
+        
+    }
+
+    .dws-wrapper2{
+        width: 90%;
+        height: 90%;
+        font-size: 14px;
+        
+    }
+    .info{
+        padding-right: 15px;
+        
+    }
+    

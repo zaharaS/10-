@@ -10,69 +10,91 @@ body{
     line-height: 35px;
 }
 
+/* гамбургер */
+
+.hamburger{
+    display: none;
+    right: 0;
+    width: 16px;
+    height: 13px;
+    /* float: right; */
+    margin: 6px;
+    position: fixed;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    cursor: pointer;
+    z-index: 100;
+}
+/* средняя полоска псевдоэл */
+.hamburger:after{
+    content:"";
+    position: absolute;
+    display: block;
+    right: 0;
+    left: 0;
+    top: 5px;
+    height: 2px;
+    background: red;
+   
+}
+
+.burger_content{
+    position: relative;
+    
+}
+
 /* шапка */
 
 .header {
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat; 
     background-position: cener;
-    /* background-size: cover; */
+    background-size: cover; 
     padding-left: 10px;
     height: 80px;
     color: #FFF;
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: row; 
     justify-content:space-between;
     align-items:center;
-    /* margin: 20px; */
-    width: 100%;
-    box-sizing: border-box;
-    padding-right: 10px;
+   
 }
 .header a {
     color: white;
     text-decoration: none;
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* flex-grow: 1; */
+    display: flex; 
+    flex-wrap: wrap; 
+     flex-grow: 1;
+     font-size: 16px;
+     text-transform: uppercase;
+     text-decoration: none; 
 }
-.headera:hover{
+.header a:hover{
         color: rgb(0, 217, 255)
     }
 
 
 .menu {
-    /* margin-left: 10px; */
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* align-items: center; */
+    /* margin-left: 20px; */
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 
 ul {
     display: flex;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  
 }
 
 li.menu_item {
     margin-left: 20px;
-    /* white-space: nowrap; */
+    white-space: nowrap;
     text-decoration: none;
     list-style: none;
 }
 
-.header a{
-    color: rgb(228, 226, 226);
-    font-family:'Libre Baskerville', serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    text-decoration: none;
 
-}
-.header a:hover{
-    color: rgb(0, 217, 255);
-}
 .social a{
     width: 25px;
     height: 25px;
@@ -143,13 +165,40 @@ border: 10px solid rgb(246, 247, 248);
     width: 100%;
     /* margin: 10px; */
     box-sizing: border-box;
-
     justify-content: center;
 }
     
+/* footer */
 
-.item:last-child {
-    /* max-width: 170px; */
-    /* flex-grow: 0; */
-    /* flex-basis: 200px; */
+.footer{
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
 }
+.info {
+    margin-top: 37px;
+}
+.mail{
+    margin-top: 37px;  
+}
+.soucial{
+    display: flex;
+    padding: 46px;
+}
+.tv{
+  width: 50px;  
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.footer a:hover{
+        color: rgb(0, 217, 255)
+    }
+
+

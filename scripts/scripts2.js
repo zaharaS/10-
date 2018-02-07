@@ -91,13 +91,6 @@ function getTargetTop(elem) {
         }
       });
 
-      // wrapper2
-
-    
-    
-
-    console.log("dsfds")
-
       
 
       
