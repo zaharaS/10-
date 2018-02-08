@@ -29,7 +29,7 @@ body{
         display: none;
     }
     
-    a {
+    .burger a {
         color: rgb(238, 232, 232);
         text-decoration: none;
         display: flex;
@@ -61,6 +61,7 @@ body{
         padding: 20px;
         margin: 20px;
         line-height: 2;
+        font-size: 17px;
     } 
     ul.burger.open{
         /* display: block; */
