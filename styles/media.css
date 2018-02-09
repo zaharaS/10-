@@ -1,6 +1,6 @@
-body{
+/* body{
     background-image: url("../pic/bg r.jpg");
-}
+} */
 @media only screen and (max-width: 768px){
     .dws-wrapper{
         margin-top:70px; 
