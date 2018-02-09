@@ -4,7 +4,8 @@ body{
     height: 100%;
     min-height: 100%;
     font-family: 'Libre Baskerville', serif;  
-    background: rgb(30, 36, 46);  
+    /* background: rgb(30, 36, 46); */
+    background-image: url("../pic/bg.jpg");  
 }
 
 /* гамбургер */
