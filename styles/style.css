@@ -28,7 +28,7 @@ body{
         background-size: cover;
         margin-left: 10px;
         height: 80px;
-        color: #FFF;
+        color: rgb(228, 228, 228);
         display: flex;
         flex-direction: row;
         justify-content:space-between;
@@ -46,7 +46,7 @@ body{
     }
 
     .header a {
-        color: white;
+        color: rgb(226, 226, 226);
         text-decoration: none;
         font-size: 16px;
         display: flex;
@@ -128,7 +128,7 @@ body{
      padding: 30px;
      margin: 30px;
      font-family: 'Libre Baskerville', serif;
-     color: rgb(255, 253, 253);
+     color: rgb(219, 219, 219);
      margin-right: 20px;
      /* box-sizing: border-box; */
      display: flex;
@@ -136,7 +136,7 @@ body{
 }
 
 .email{
-    color: white;
+    color: rgb(216, 216, 216);
     text-decoration: none;  
 }
 .email:hover{
@@ -197,7 +197,7 @@ body{
 }
 .text_N{
     /* padding: 20px; */
-    color: white;
+    color: rgb(230, 230, 230);
     font-size: 20px;
     display: flex;
     justify-content: flex-start;
@@ -232,7 +232,7 @@ container_NELA_third{
   width: 50px;  
 }
 .footer a {
-    color: white;
+    color: rgb(226, 226, 226);
     text-decoration: none;
     font-size: 17px;
     display: flex;
