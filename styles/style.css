@@ -266,6 +266,13 @@ container_NELA_third{
     background: #3e63dc;
    }  
 
+   button:active, button:focus {
+    outline: none;
+  }
+  button::-moz-focus-inner {
+    border: 0;
+  }
+
    /* <wrapper> */
     
    .dws-wrapper2 {

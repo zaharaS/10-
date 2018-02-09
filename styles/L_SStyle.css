@@ -47,14 +47,14 @@ body{
     background-size: cover;
     margin-left: 10px;
     height: 80px;
-    color: #FFF;
+    color: rgb(228, 228, 228);
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     align-items:center;
 }
 .header a {
-    color: white;
+    color: rgb(228, 228, 228);
     text-decoration: none;
     display: flex;
     flex-wrap: wrap;
@@ -161,7 +161,7 @@ height: 200px;
   width: 50px;  
 }
 .footer a {
-    color: white;
+    color:rgb(228, 228, 228);
     text-decoration: none;
     font-size: 16px;
     display: flex;

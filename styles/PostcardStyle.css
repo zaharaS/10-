@@ -84,7 +84,9 @@ body{
 
 ul {
     display: flex;
-  
+    top:0;
+    bottom: 0;
+    left: 0; 
 }
 
 li.menu_item {
@@ -92,6 +94,7 @@ li.menu_item {
     white-space: nowrap;
     text-decoration: none;
     list-style: none;
+    float: none;
 }
 
 
