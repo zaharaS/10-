@@ -96,7 +96,7 @@ li.menu_item {
     text-decoration: none;
 }
 
-/* .social a{
+.social a{
     width: 25px;
     height: 25px;
     display: inline-block;
@@ -111,7 +111,7 @@ li.menu_item {
     background: url("../icons/facebook-logo-outline.PNG") no-repeat;
     background-position: 0 0;
     margin-left: 2px;
-}  */
+}  
 /* галерея */
 .gallery{
     padding: .5vw;
