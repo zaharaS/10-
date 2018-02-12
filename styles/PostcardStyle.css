@@ -118,7 +118,6 @@ li.menu_item {
 
 /* gallery postcards */
 .wrapper{
-    
   max-width: 740px;
   margin:20px auto;
   background: rgb(163, 162, 162);
@@ -178,7 +177,7 @@ border: 10px solid rgb(246, 247, 248);
  .dws-wrapper2 {
     font-family: 'Libre Baskerville', serif;
     background-image: url("../pic/bg.jpg");
-    width: 95%;
+    width: 100%;
     /* margin: 30px; */
     padding: 30px;
     display: none;

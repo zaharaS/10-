@@ -23,6 +23,8 @@
 @media screen and (max-width: 450px){
     .content{
         flex-direction: column-reverse!important;
+        margin: 0;
+        padding: 0;
     }  
 
     .header{
