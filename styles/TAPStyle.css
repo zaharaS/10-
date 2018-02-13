@@ -103,9 +103,9 @@ li.menu_item {
    
 }
 .tw{
-   background: url("../icons/twitter-social-outlined-logo.PNG") no-repeat; 
-   background-position: 100% 0;
-   margin-left: 2px;
+   /* background: url("../icons/twitter-social-outlined-logo.PNG") no-repeat; */
+   /* background-position: 100% 0; */
+   /* margin-left: 2px; */
 }
 .fb{
     background: url("../icons/facebook-logo-outline.PNG") no-repeat;
@@ -177,7 +177,7 @@ li.menu_item {
     color: white;
     text-decoration: none;
     font-size: 16px;
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     flex-grow: 1;
 }
